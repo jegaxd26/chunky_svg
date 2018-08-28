@@ -12,7 +12,7 @@ defmodule ChunkySVG.Renderer do
   end
 
   def render(%Renderer{root_opts: root_opts, figures: figures} = renderer) do
-    {:svg, root_opts, figures}
+    {:svg, root_opts, figures |> Enum.reverse()}
     |> XmlBuilder.generate()
   end
 
