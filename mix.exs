@@ -5,12 +5,12 @@ defmodule ChunkySVG.Mixfile do
     [
       app: :chunky_svg,
       version: "0.0.4",
-      elixir: "~> 1.0",
+      elixir: "~> 1.6",
       deps: deps,
       package: package,
       description: """
         A library for drawing things with SVG
-      """,
+      """
     ]
   end
 
@@ -32,15 +32,15 @@ defmodule ChunkySVG.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [
-      {:xml_builder, "~> 0.0.5"},
+      {:xml_builder, "~> 2.0"}
     ]
   end
 
   defp package do
     [
-      contributors: ["Michael Ries"],
+      contributors: ["Michael Ries", "Jevgenij Semionov"],
       licenses: ["MIT"],
-      links: %{github: "https://github.com/mmmries/chunky_svg"},
+      links: %{github: "https://github.com/jegaxd26/chunky_svg"}
     ]
   end
 end
